@@ -1,0 +1,17 @@
+{
+  "name": "CIdetail別タブ",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "description": "Github上のCIへのリンクを別タブで開くようにします",
+  "icons": {
+    "16": "icon/Ci.png",
+    "48": "icon/Ci.png",
+    "128": "icon/Ci.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["js/script.js"]
+    }
+  ]
+}
